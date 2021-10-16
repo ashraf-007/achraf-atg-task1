@@ -9,7 +9,7 @@ const terms = document.getElementById('terms')
 const google = document.getElementById('google')
 const fb = document.getElementById('fb')
 const formCta = document.getElementById('form-cta')
-const confirmPaswword = document.getElementById('confirm-password')
+const confirmPasword = document.getElementById('confirm-password')
 const names = document.getElementById('names')
 const title = document.getElementById('title')
 const signInBtn = document.getElementById('sign-in-btn')
@@ -81,11 +81,11 @@ function toggleForm() {
    signInText.innerHTML = !haveAccount ? 'Already have an account ? <span id="sign-in-btn" class="font-weight-bold">Sign In</span>' : 'Don’t have an account yet? <span id="sign-in-btn" class="font-weight-bold">Create Account</span>'
    title.innerText = haveAccount ? 'Sign In' : 'Create Account'
    google.children[1].innerText = haveAccount ? 'Sign In with Google' : 'Sign Up with Google'
-   fb.children[1].innerText = haveAccount ? 'Sign In with Fcaebook' : 'Sign Up with Facebook'
+   fb.children[1].innerText = haveAccount ? 'Sign In with Facebook' : 'Sign Up with Facebook'
    formCta.innerText = haveAccount ? 'Sign In' : 'Create Account'
    terms.style.display = haveAccount ? 'none' : 'block'
    names.style.display = haveAccount ? 'none' : 'block'
-   confirmPaswword.style.display = haveAccount ? 'none' : 'block'
+   confirmPasword.style.display = haveAccount ? 'none' : 'block'
    email.style.borderTop = haveAccount ? 'none' : '1px solid #D9D9DB'
    formActionMobile.innerText = !haveAccount ? 'or, Sign in' : 'or, Create account'
    forgotPasswordText.innerText = !haveAccount ? 'Forgot Password?' : 'By signing up, you agree to our Terms & conditions, Privacy policy'
