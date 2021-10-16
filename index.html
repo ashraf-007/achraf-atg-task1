@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 , shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Achraf ATG-Task1</title>
+</head>
+
+<body>
+       <!-- Mobile edit button -->
+    <div id="edit-button" class="edit-button">
+        <img src="./assets/edit-button.png" alt="">
+    </div>
+                    <!-- Navbar -->
+    <nav id='nav' class="nav">
+        <ul class="ul">
+            <li>
+                <img src="./assets/whole.svg" alt="">
+            </li>
+            <li class="top-input-container">
+                <img class="search" src="./assets/search.svg" alt="">
+                <input class="top-input" type="text" placeholder="Search for your favorite groups in ATG">
+            </li>
+            <li id="create-account" data-toggle="modal" data-target="#exampleModalCenter">
+                <div class="create-account">
+                    <p>Create account<span>. It’s free! </span></p>
+                    <img class="ml-2" src="/assets/arrow-down.svg" alt="">
+                </div>
+            </li>
+
+            <li id='login-avatar' type="button">
+                <div class="login-avatar d-flex justify-content-start align-items-center">
+                    <img class="av-image" src="./assets/jones-avatar.png" alt="">
+                    <p class=" mt-3 ml-3">Joseph Gray</p>
+                    <img class="ml-2" src="./assets/arrow-down.svg" alt="">
+                </div>
+            </li>
+        </ul>
+    </nav>
+                    <!-- Hero -->
+    <section id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero">
+            <div class="hero-elements">
+                <h1>Computer Engineering</h1>
+                <p>142,765 Computer Engineers follow this</p>
+            </div>
+        </div>
+        <div id="mobile-nav" class="mobile-nav">
+            <img src="./assets/back-icon.svg" alt="">
+            <button id="join" data-toggle="modal" data-target="#exampleModalCenter">Join Group</button>
+        </div>
+    </section>
+
+                <!-- Modal -->
+    <div id='modal'>
+        <div class="modal fade " id="exampleModalCenter" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+                <div class="modal-content">
+                    <div class="modal-header modal-top border-0">
+                        <p class="modal-title" id="exampleModalCenterTitle">Let's learn, share & inspire each other with
+                            our passion for computer engineering. Sign up now 🤘🏼</p>
+                        <button class="close" .type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><img src="./assets/close.svg" alt=""></span>
+                        </button>
+                    </div>
+                    <div class="modal-body p-4">
+                        <div class="d-flex justify-content-between align-items-start pb-3">
+
+                            <div id='create-email'>
+                                <div class="d-flex justify-content-between align-items-baseline width-control">
+                                    <h1 id='title'>Create Account</h1>
+                                    <img style='cursor: pointer;' data-toggle="modal" data-target="#exampleModalCenter" class="mobile-close"
+                                        src="./assets/mobile-close.svg" alt="">
+                                </div>
+                                <!-- Modal Form -->
+                                <div id='form'>
+
+                                    <form class="form" action="">
+                                        <div id="names">
+
+                                            <div class="d-flex names">
+                                                <input class="form-control" type="text" name='firstName'
+                                                    placeholder="First Name">
+                                                <input class="form-control" type="text" name='lastName'
+                                                    placeholder="Last Name">
+                                            </div>
+                                        </div>
+
+                                        <input id='email' class="form-control email" type="email" placeholder="Email">
+                                        <div id='password' class="form-control">
+                                            <input class="password" type="password" placeholder="Password">
+                                            <img src="./assets/eye-icon.png" alt="">
+                                        </div>
+                                        <input id='confirm-password' class="form-control" type="password"
+                                            placeholder="Confirm Password">
+                                    </form>
+                                </div>
+                                <div class="width-control d-flex justify-content-between align-items-baseline ">
+                                    <button id='form-cta' type='button' class="form-btn">Create Account</button>
+                                    <p id='form-action' class="form-action">or,Sign in</p>
+                                </div>
+
+                                <div id="social">
+                                    <div id='fb' class="social mt-3">
+                                        <img src="./assets/fb-icon.jpg" alt="">
+                                        <p>Sign up with Facebook</p>
+                                    </div>
+                                    <div id='google' class="social mt-2">
+                                        <img src="./assets/google-icon.svg" alt="">
+                                        <p>Sign up with Google</p>
+                                    </div>
+                                    <div id='forgot-password' class="mt-2">
+                                        Forgot Password?
+                                    </div>
+                                </div>
+                            </div>
+                            <div id='illustration' class="d-flex justify-content-between align-items-end flex-column">
+                                <p id='sign-in' class="sign-in">Already have an account ? <span id="sign-in-btn"
+                                        class="font-weight-bold">Sign In</span> </p>
+                                <img src="./assets/illustration.svg" alt="">
+                                <p id='terms' class="terms">By signing up, you agree to our Terms & conditions, Privacy
+                                    policy</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- Main Section -->
+    <main id="main">
+        <section class="main ">
+            <div class="border-bottom d-flex justify-content-between align-items-baseline mt-4 main-navigation">
+                <!-- Main Desktop navigation -->
+                <div id='main-navigation-items' class="main-navigation-items">
+
+                    <ul class="d-flex mb-1 ">
+                        <li class="">
+                            <p class="selected font-weight-bold">All Posts(32)</p>
+                        </li>
+                        <li>
+                            <p class="text-muted">Article</p>
+                        </li>
+                        <li>
+                            <p class="text-muted">Events</p>
+
+                        </li>
+                        <li>
+                            <p class="text-muted">Education</p>
+                        </li>
+                        <li>
+                            <p class="text-muted">Job</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Mobile Navigation -->
+                <div id='mobile-navigation-items'>
+                    <div class="mobile-navigation-items d-flex justify-content-between align-items-center">
+                        <p class="font-weight-bold">Posts(328)</p>
+
+                        <div class="filter py-1 px-2">
+                            <div class="d-flex justify-content-between align-items-baseline">
+                                <p class="mr-2">Filter: <span>All</span></p>
+                                <img src="./assets/arrow-down.svg" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                        <!-- Main navigation buttons -->
+                <div id='main-buttons'>
+                    <div class="main-buttons d-flex">
+                        <button class="btn btn-light mr-3 font-weight-bold">Write a post<img class="ml-3"
+                                src="./assets/arrow-down.svg" alt=""></button>
+                        <div id='btn-join'>
+                            <button class="btn btn-primary font-weight-normal"><img class="mr-2"
+                                    src="./assets/join-group.svg" alt="">Join group</button>
+                           </div>
+
+                        <div id='btn-leave'>
+                            <button class="btn btn-outline border d-flex justify-content-center align-items-center"><img
+                                    class="mr-2" src="./assets/leave-icon.svg" /> Leave Group</button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+                <!-- Core elements  -->
+            <section id="core-elements" class="core-elements mt-4">
+                <!-- Left Feed -->
+
+                <div id='scroll-container'>
+
+                    <div class="left-feed">
+                <!-- Cards -->
+
+                        <div class="card mb-3">
+                            <img src="./assets/trees.png" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <div class="d-flex ">
+                                    <span>✍️</span>
+                                    <p class="title pt-1 ml-1">Article</p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <h5 class="card-title">What if famous brands had regular fonts? Meet RegulaBrands!
+                                    </h5>
+                                    <div id="dots-edit">
+                                        <div class="dots">
+                                    <img  class="pt-2" src="./assets//dots.svg" alt="">
+                                </div>
+
+                                    <ul class="options-container">
+                                        <li>Edit</li>
+                                        <li>Report</li>
+                                        <li>Option 3</li>
+                                    </ul>
+                                </div>
+
+                                </div>
+                                <p class="card-text">I’ve worked in UX for the better part of a decade. From now on, I
+                                    plan to rei…</p>
+                                <div class="avatar-elements d-flex justify-content-between align-items-center">
+                                    <div class="avatar d-flex justify-content-start align-items-center">
+                                        <img src="./assets/avatar-image.png" alt="">
+                                        <div class="avatar-infos ml-2">
+                                            <p class="font-weight-bold">Sarthak Kamra</p>
+                                            <p class="avatar-mobile-views font-weight-light">14.2k views</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="post-details d-flex justify-content-center align-items-center">
+                                        <div class="views d-flex justify-content-center align-items-baseline mr-5">
+                                            <img src="./assets/eye-icon.png" alt="">
+                                            <p class="ml-2">14.2k views</p>
+                                        </div>
+                                        <div class="share-post btn btn-light d-flex justify-content-between baseline">
+                                            <img class="mr-2" src="./assets/share.svg" alt="">
+                                            <p>Share</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3">
+                            <img src="./assets/wall-image.png" class="card-img-top img-fluid" style="height:auto;"
+                                alt="...">
+                            <div class="card-body">
+                                <div class="d-flex ">
+                                    <span>🔬️</span>
+                                    <p class="title pt-1 ml-1">Education</p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <h5 class="card-title">Tax Benefits for Investment under National Pension Scheme
+                                        launched by Government</h5>
+                                        <div id="dots-edit">
+                                            <div class="dots">
+                                        <img  class="pt-2" src="./assets//dots.svg" alt="">
+                                    </div>
+    
+                                        <ul class="options-container">
+                                            <li>Edit</li>
+                                            <li>Report</li>
+                                            <li>Option 3</li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p class="card-text">I’ve worked in UX for the better part of a decade. From now on, I
+                                    plan to rei…</p>
+
+                                <div class="avatar-elements d-flex justify-content-between align-items-center">
+                                    <div class="avatar d-flex justify-content-start align-items-center">
+                                        <img src="./assets/sarah-avatar.png" alt="">
+
+                                        <div class="avatar-infos ml-2">
+                                            <p class="font-weight-bold">Sarah West</p>
+                                            <p class="avatar-mobile-views font-weight-light">14.2k views</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="post-details d-flex justify-content-center align-items-center">
+                                        <div class="views d-flex justify-content-center align-items-baseline mr-5">
+                                            <img src="./assets/eye-icon.png" alt="">
+                                            <p class="ml-2">14.2k views</p>
+                                        </div>
+                                        <div class="share-post btn btn-light d-flex justify-content-between baseline">
+                                            <img class="mr-2" src="./assets/share.svg" alt="">
+                                            <p>Share</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="card mb-3">
+                            <img src="./assets/car-image.png" class="card-img-top img-fluid" style="height:auto;"
+                                alt="...">
+                            <div class="card-body">
+                                <div class="d-flex ">
+                                    <span>🗓️</span>
+                                    <p class="title pt-1 ml-1">Meetup</p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <h5 class="card-title">Finance & Investment Elite Social Mixer @Lujiazui</h5>
+                                    <img class="pt-2" src="./assets//dots.svg" alt="">
+                                </div>
+                                <div class="date-location d-flex justify-content-start align-items-center">
+                                    <div class="date d-flex align-items-center">
+                                        <img src="./assets/calendar-icon.svg" alt="">
+                                        <p>Fri, 12 Oct, 2018</p>
+                                    </div>
+                                    <div class="location d-flex  align-items-center">
+                                        <img src="./assets/location-icon.svg" alt="">
+                                        <p>Ahmedabad, India</p>
+                                    </div>
+                                </div>
+                                <button class="website-btn">
+                                    Visit Website
+                                </button>
+                                <div class="avatar-elements d-flex justify-content-between align-items-center">
+                                    <div class="avatar d-flex justify-content-start align-items-center">
+                                        <img src="./assets/jones-avatar.png" alt="">
+                                        <div class="avatar-infos ml-2">
+                                            <p class="font-weight-bold">Ronal Jones</p>
+                                            <p class="avatar-mobile-views font-weight-light">14.2k views</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="post-details d-flex justify-content-center align-items-center">
+                                        <div class="views d-flex justify-content-center align-items-baseline mr-5">
+                                            <img src="./assets/eye-icon.png" alt="">
+                                            <p class="ml-2">14.2k views</p>
+                                        </div>
+                                        <div class="share-post btn btn-light d-flex justify-content-between baseline">
+                                            <img class="mr-2" src="./assets/share.svg" alt="">
+                                            <p>Share</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <div class="d-flex ">
+                                    <span>💼️</span>
+                                    <p class="title pt-1 ml-1">Job</p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <h5 class="card-title">Software Developer</h5>
+                                    <img class="pt-2" src="./assets//dots.svg" alt="">
+                                </div>
+                                <div class="date-location d-flex justify-content-start align-items-center">
+                                    <div class="date d-flex align-items-center">
+                                        <img src="./assets/bag-icon.svg" alt="">
+                                        <p>Innovaccer Analytics Private Ltd.</p>
+                                    </div>
+                                    <div class="location d-flex  align-items-center">
+                                        <img src="./assets/location-icon.svg" alt="">
+                                        <p>Noida, India</p>
+                                    </div>
+                                </div>
+                                <div class="website-btn">
+                                    Apply on Timesjobs
+                                </div>
+
+                                <div class="avatar-elements d-flex justify-content-between align-items-center">
+                                    <div id='avatar-elemets'>
+
+                                        <div class="avatar d-flex justify-content-start align-items-center">
+                                            <img src="./assets/gray-avatar.png" alt="">
+                                            <div class="avatar-infos ml-2">
+                                                <p class="font-weight-bold">Joseph Gray</p>
+                                                <p class="avatar-mobile-views font-weight-light">14.2k views</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="post-details d-flex justify-content-center align-items-center">
+                                        <div class="views d-flex justify-content-center align-items-baseline mr-5">
+                                            <img src="./assets/eye-icon.png" alt="">
+                                            <p class="ml-2">14.2k views</p>
+                                        </div>
+                                        <div class="btn btn-light d-flex justify-content-between baseline share-post">
+                                            <img class="mr-2" src="./assets/share.svg" alt="">
+                                            <p>Share</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Right Feed -->
+                <div id="right-feed">
+                    <div class="right-feed d-flex justify-content-end align-items-end flex-column">
+
+                        <div class="location-input border-bottom pb-2 d-flex justify-content-start align-items-center">
+                            <img class="" src="./assets/location-icon.svg" alt="">
+                            <input id='location-input' class="mr-4" value="Noida, India " placeholder="Enter your location" type="text">
+                            <img id="input-toggle-icon" src="./assets/edit-icon.svg" alt="">
+                        </div>
+                        <div id='alert-message'>
+
+                            <div class="alert-message">
+                                <img class="mr-1" src="./assets/alert-icon.svg" alt="">
+                                <p>Your location will help us serve better and extend a personalised experience.</p>
+                            </div>
+                        </div>
+                    
+
+                <!-- Recommended Groups -->
+
+                        <div id="recommended-groups">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img class="mr-2" src="./assets/like-icon.svg" alt="">
+                                <h1>RECOMMENDED GROUPS</h1>
+                            </div>
+                            <ul>
+                                <li class=" login-avatar d-flex justify-content-between align-items-center">
+
+                                    <div class=" login-avatar d-flex justify-content-start align-items-center">
+                                        <img class="av-image" src="./assets/leisure.png" alt="">
+                                        <p class=" mt-3 ml-3">Leisure</p>
+                                    </div>
+                                    <div class="follow">
+                                        follow
+                                    </div>
+                                </li>
+                                <li class=" login-avatar d-flex justify-content-between align-items-center">
+                                    <div class=" login-avatar d-flex justify-content-start align-items-center">
+                                        <img class="av-image" src="./assets/activism.png" alt="">
+                                        <p class=" mt-3 ml-3">Activism</p>
+                                    </div>
+                                    <div class="follow">
+                                        follow
+                                    </div>
+                                </li>
+                                <li class=" login-avatar d-flex justify-content-between align-items-center">
+                                    <div class=" login-avatar d-flex justify-content-start align-items-center">
+                                        <img class="av-image" src="./assets/mba.png" alt="">
+                                        <p class="mt-3 ml-3">MBA</p>
+                                    </div>
+                                    <div class="follow">
+                                        follow
+                                    </div>
+                                </li>
+                                <li class=" login-avatar d-flex justify-content-between align-items-center">
+                                    <div class=" login-avatar d-flex justify-content-start align-items-center">
+                                        <img class="av-image" src="./assets/philosophy.png" alt="">
+                                        <p class=" mt-3 ml-3">Philosophy</p>
+                                    </div>
+                                    <div class="follow">
+                                        follow
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#" class="see-more">See More...</a>
+                    </div>
+
+                </div>
+            </section>
+        </section>
+    </main>
+
+                <!-- Scripts  -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>
