@@ -1,5 +1,5 @@
-/************ Mobile : 360px **********
-**************Desktop : 1440px ************
+/************ Mobile min-width : 360px **********
+**************Desktop max-width : 1440px ************
 ************************************/
 
 * {
@@ -532,12 +532,12 @@ hr {
     margin-bottom: 24px;
 }
 
+.modal-dialog{
+    max-width: 736px;
+}
 
 .modal-content {
     border-radius: 8px;
-    width: 736px;
-    height: auto;
-
 }
 
 .modal-top {
@@ -555,10 +555,11 @@ hr {
 
 
 .form {
-    width: 320px;
+    max-width: 320px;
     height: auto;
     border-radius: 2px;
     border: 1px solid #D9D9DB;
+
 
 }
 
@@ -593,7 +594,6 @@ hr {
 
 .form-btn {
     margin-top: 19px;
-    width: 320px;
     height: 40px;
     background: #2F6CE5;
     border-radius: 20px;
@@ -601,13 +601,17 @@ hr {
     font-size: 14px;
     text-align: center;
     color: #FFFFFF;
-}
+    width: 320px;
 
+}
+#illustration{
+    width: 50%;
+}
 .social {
     display: flex;
     justify-content: center;
     align-items: baseline;
-    width: 320px;
+    max-width: 320px;
     height: 38px;
     background: #FFFFFF;
     border: 0.6px solid #D9D9DB;
@@ -650,6 +654,7 @@ hr {
     letter-spacing: -0.008em;
     color: #000000;
     opacity: 0.6;
+    max-width: 100%;
 }
 
 .password {
@@ -703,8 +708,81 @@ hr {
     text-decoration: underline;
 }
 
-/******** Media Queries*******/
+/***************** Media Queries*******/
 
+
+@media only screen and (max-width:650px){
+    /****** Modal Media Queries ******/
+        .modal-dialog{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+    .modal-content {
+        position: absolute;
+        bottom: 0;
+        margin: 0 auto;
+        border-radius: 8px 8px 0 0 ;
+
+    }
+    .modal-top {
+        display: none;
+    }
+
+    .modal-body {
+        display: grid;
+        place-content: center;
+
+    }
+
+    .form-btn {
+        width: 40%;
+    }
+
+    .form-action {
+        display: block;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 17px;
+        color: #495057;
+    }
+
+    .form-action:hover {
+        text-decoration: underline;
+    }
+
+    #illustration {
+        display: none !important;
+    }
+
+    .mobile-close {
+        position: relative;
+        display: block;
+        top: 5px;
+    }
+
+    #create-email {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #form {
+        width: 100%;
+        margin: 0 auto;
+
+    }
+    #forgot-password {
+        display: block;
+    }
+    #illustration {
+        display: none!important;
+    }
+    
+   
+}
 
 @media only screen and (max-width:995px) {
 
@@ -718,6 +796,8 @@ hr {
 
     .nav {
         display: none;
+        width: 100%;
+        margin: 0 auto;
     }
 
     .mobile-nav {
@@ -872,102 +952,21 @@ hr {
         width: 100%;
         margin: 0 auto;
     }
-
-    /****** Modal Media Queries ******/
-
-
-    .modal-content {
-        min-height: 462px;
-        width: 100% !important;
-        margin: 0 auto;
-    }
-
-    .modal-top {
-        display: none;
-    }
-
-    .modal-body {
-        width: 100% !important;
-        display: grid;
-        place-content: center;
-    }
-
-    .form-btn {
-        width: 40%;
-    }
-
-    .width-control {
-        max-width: 320px;
-    }
-
-    .form-action {
-        display: block;
-        cursor: pointer;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 17px;
-        color: #495057;
-    }
-
-    .form-action:hover {
-        text-decoration: underline;
-    }
-
-    #illustration {
-        display: none !important;
-    }
-
-    .mobile-close {
-        position: relative;
-        display: block;
-        top: 5px;
-    }
-
-    #create-email {
-        width: 100%;
-        margin: 0 auto;
-    }
-
     #form {
-        width: 100%;
-        margin: 0 auto;
-
-    }
-
-    #illustration {
-        display: none;
-    }
-
-    #forgot-password {
-        display: block;
+        width: 320px;
     }
 }
 
+
 @media only screen and (max-width:578px) {
 
-    .modal {
-        height: 100vh !important;
-        margin: 0;
-        padding: 0;
-
-
-    }
 
     .modal-dialog-cented {
         position: relative;
         padding: 0;
     }
+  
 
-    .modal-dialog {
-        padding: 0;
-    }
-
-    .modal-content {
-        position: absolute;
-        bottom: 0;
-        border-radius: 10px;
-
-    }
 }
 
 @media only screen and (max-width:401px) {

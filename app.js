@@ -112,7 +112,7 @@ function handleStickyNav() {
 
 function handleForgotPassword(){
 
-if(width === true  || window.innerWidth <=955 ){
+if(width === true  || window.innerWidth <=650 ){
    forgotPasswordText.style.display = 'block'
    title.innerText = haveAccount ? 'Welcome Back!' : 'Create Account'
 
@@ -130,7 +130,7 @@ if(width === true  || window.innerWidth <=955 ){
 
 
    function handleWindowResize(){
-      let widthCondition = window.innerWidth <= 995
+      let widthCondition = window.innerWidth <= 650
       width = widthCondition 
       handleForgotPassword()
    }
