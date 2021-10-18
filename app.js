@@ -82,7 +82,7 @@ function toggleForm() {
    title.innerText = haveAccount ? 'Sign In' : 'Create Account'
    google.children[1].innerText = haveAccount ? 'Sign In with Google' : 'Sign Up with Google'
    fb.children[1].innerText = haveAccount ? 'Sign In with Facebook' : 'Sign Up with Facebook'
-   formCta.innerText = haveAccount ? 'Sign In' : 'Create Account'
+   formCta.innerText = haveAccount ? 'Sign In' : 'Create new for free!'
    terms.style.display = haveAccount ? 'none' : 'block'
    names.style.display = haveAccount ? 'none' : 'block'
    confirmPasword.style.display = haveAccount ? 'none' : 'block'
